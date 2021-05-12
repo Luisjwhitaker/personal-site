@@ -2,9 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Luis Whitaker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </head>
   <body>
-    <h1>This is the blog home</h1>
+    <div class="container row">
+      {% for item in items %}
+        <h4>{{item.title}}</h4>
+        <p>{{item.content}}</p>
+      {% endfor %}
+      <div class="center-align col s12">Blog posts</div>
+      <div class="center-align col s12">This is the second div</div>
+    </div>
   </body>
 </html>
