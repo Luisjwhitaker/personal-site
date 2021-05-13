@@ -9,7 +9,7 @@ class Tags(models.Model):
 
 
 class BlogPost(models.Model):
-    title = models.CharField(max_length=70)
+    title = models.CharField(max_length=100)
 #    needs pillow to work
 #    image = models.ImageField(upload_to='')# use this as header for content and image for preview
     content = models.TextField(max_length=500) # change to rich-text-field soon

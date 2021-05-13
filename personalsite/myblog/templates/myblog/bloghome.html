@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Luis Whitaker</title>
+  <title>Luis John Whitaker</title>
   <link rel="stylesheet" href="{% static '/css/materialize.min.css' %}">
 </head>
   <body>
@@ -15,16 +15,16 @@
         </h6>
       </header>
     </a>
-    <img src="{% static 'images/bamboo.jpg' %}" alt="image" style="width:100%; position:relative; text-align: center; height: 50vh; object-fit: cover;"> <!-- Image: remove later | extend template -->
-    <div style="position: absolute; top: 25vh;left: 50%; transform: translate(-50%, -50%);">
-      <h1 class="blue-grey-text text-lighten-4 center-align"><b>Blog Posts</b></h1>
+    <img src="{% static 'images/snow-trees.jpg' %}" alt="image" style="width:100%; position:relative; text-align: center; height: 60vh; object-fit: cover;"> <!-- Image: remove later | extend template -->
+    <div style="position: absolute; top: 30vh;left: 50%; transform: translate(-50%, -50%);">
+      <h1 class="blue-grey-text text-darken-4 center-align" style="font-size:4vw;"><b>Blog Posts</b></h1>
     </div>
     <div class="container"><!-- blog previews -->
       <div class="container row">
         {% for item in items %}
           <a href="{% url 'post page' item.id %}">
             <h4 class="black-text">{{item.title}}</h4>
-            <p class="grey-text">{{item.content}}</p>
+            <p class="grey-text">{{item.content}}<br>Tags:</p>
             <div class="divider"></div>
           </a>
         {% endfor %}
