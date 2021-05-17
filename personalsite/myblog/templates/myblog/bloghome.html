@@ -10,8 +10,8 @@
     <div class="container row">
       {% for item in items %}
         <a href="{% url 'post page' item.id %}">
-          <h4 class="black-text">{{item.title}}</h4>
-          <p class="grey-text">{{item.content}}<br>Tags:</p>
+          <h4 class="black-text">{{item.title|title}}</h4>
+          <p class="grey-text">{{item.content|truncatewords:30|safe}}<br>Tags:</p>
           <div class="divider"></div>
         </a>
       {% endfor %}
