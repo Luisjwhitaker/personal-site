@@ -2,12 +2,11 @@
 {% load static %}
 {% block content %}
   {% csrf_token %}
-  <img src="{% static 'images/snow-trees.jpg' %}" alt="image" style="width:100%; position:relative; text-align: center; height: 60vh; object-fit: cover;"> <!-- Image: remove later | extend template -->
+  <img src="{% static 'images/snow-trees.jpg' %}" alt="image" style="width:100%; position:relative; text-align: center; height: 50vh; object-fit: cover;"> <!-- Image: remove later | extend template -->
   <div style="position: absolute; top: 30vh;left: 50%; transform: translate(-50%, -50%);">
-    <h1 class="blue-grey-text text-darken-4 center-align" style="font-size:4vw;"><b>{{post.title|title}}</b></h1>
+    <h1 class="blue-grey-text text-darken-4 center-align" style="font-size:4vw; padding-top: 25px;"><b>{{post.title|title}}</b></h1>
   </div>
   <div class="container"> <!-- Post Content -->
-
     <div class="container">
       <p>{{post.date_created|date:"M d, Y"}} | by: Luis John Whitaker <br> Tags: <a href="#">Filler</a></p>
       <p>{{post.content|safe}}</p>
