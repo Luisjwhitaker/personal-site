@@ -10,7 +10,7 @@
     <div class="container row"> <!-- blog previews -->
       {% for item in page_obj %}
         <a href="{% url 'post page' item.id %}" id="preview">
-          <h4 class="blue-grey-text text-darken-4">{{item.title|title}}</h4>
+          <h4 class="blue-grey-text text-darken-4"><b>{{item.title|title}}</b></h4>
         </a>
           <p>{{item.content|safe|truncatewords:25}}<br>Tags:</p>
           <div class="divider"></div>

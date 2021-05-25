@@ -10,6 +10,7 @@ media
 
 settings.py
 /static
+static/
 *.jpg
 *.css
 *.js

@@ -8,7 +8,8 @@
   </div>
   <div class="container"> <!-- Post Content -->
     <div class="container">
-      <p>{{post.date_created|date:"M d, Y"}} | by: Luis John Whitaker <br> Tags: <a href="#">Filler</a></p>
+      <p>{{post.date_created|date:"M d, Y"}} | by: Luis John Whitaker <br> Tags: {% for tag in post.post_tags.all %}<a href="#"> {{tag.name}}</a> |{% endfor %}</p>
+
       <p>{{post.content|safe}}</p>
     </div>
   </div>

@@ -1,5 +1,5 @@
 from django.db import models
-
+from taggit.managers import TaggableManager
 # Create your models here.
 
 #class Tags(models.Model):
@@ -13,7 +13,7 @@ class BlogPost(models.Model):
 #    needs pillow to work
 #    image = models.ImageField(upload_to='')# use this as header for content and image for preview
     content = models.TextField(max_length=99999) # change to rich-text-field soon
-#    tags = # list of tags
+    post_tags = TaggableManager()
     date_created = models.DateTimeField(auto_now_add=True)
     # Add view count later
 
