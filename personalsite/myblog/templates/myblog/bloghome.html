@@ -12,7 +12,7 @@
         <a href="{% url 'post page' item.id %}" id="preview">
           <h4 class="blue-grey-text text-darken-4">{{item.title|title}}</h4>
         </a>
-          <p>{{item.content|safe|truncatewords:30}}<br>Tags:</p>
+          <p>{{item.content|safe|truncatewords:25}}<br>Tags:</p>
           <div class="divider"></div>
       {% endfor %}
     </div>
@@ -21,11 +21,9 @@
           {% if page_obj.has_previous %}
               <a href="?page={{ page_obj.previous_page_number }}">previous</a>
           {% endif %}
-
           <span class="current">
               Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
           </span>
-
           {% if page_obj.has_next %}
               <a href="?page={{ page_obj.next_page_number }}">next</a>
           {% endif %}
