@@ -10,12 +10,10 @@ from taggit.managers import TaggableManager
 
 class BlogPost(models.Model):
     title = models.CharField(max_length=100)
-#    needs pillow to work
-#    image = models.ImageField(upload_to='')# use this as header for content and image for preview
     content = models.TextField(max_length=99999) # change to rich-text-field soon
     post_tags = TaggableManager()
     date_created = models.DateTimeField(auto_now_add=True)
-    # Add view count later
+    # Add view count later ?
 
     def __str__(self):
         return self.title
