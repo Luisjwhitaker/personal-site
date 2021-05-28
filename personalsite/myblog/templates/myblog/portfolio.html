@@ -24,8 +24,9 @@
 					<header id="header" class="alt">
 						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
 						<h1>Luis John Whitaker</h1>
-						<p>Django Programmer</p>
-            <a href="/blog">Check out my Blog</a>
+						<p>Django Programmer<br>
+            <a href="{% url 'blog home' %}">Check out MyBlog</a><br>
+						<a href="{% url 'coffee home' %}">Check out CoffeCat</a></p>
 					</header>
 
 				<!-- Nav -->
@@ -41,7 +42,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Projects -->
+						<!-- Projects | first split -->
 						<!-- Project 1 -->
 							<section id="projects" class="main">
 								<div class="spotlight">
@@ -83,7 +84,7 @@
                     Technologies Used:
                     <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
 										<ul class="actions">
-											<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
+											<li><a href="{% url 'coffee home' %}" class="button">Visit Site</a></li>
 											<li><a href="generic.html" class="button">See Code</a></li>
 											<li><a href="generic.html" class="button">Preview</a></li>
 										</ul>
@@ -152,6 +153,21 @@
                   <li>
 										<span class="icon brands major style1 fa-sass"></span>
 										<h3>Sass</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon brands major style3 fa-foursquare"></span>
+										<h3>Foursquare</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon brands major style5 fa-react"></span>
+										<h3>React</h3>
+										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+									</li>
+									<li>
+										<span class="icon brands major style2 fa-bootstrap "></span>
+										<h3>Bootstrap</h3>
 										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 								</ul>
