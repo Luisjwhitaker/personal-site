@@ -6,6 +6,15 @@
   </head>
   <body>
     <h1>This is the CoffeeCat home page</h1>
-    <a href="{% url 'portfolio home' %}">Return to Home</a>
+    <a href="{% url 'portfolio home' %}">Return to Portfolio</a>
+    <a href="{% url 'blog home' %}">Return to Blog</a>
+    <br>
+    {% for product in products %}
+    <h1>{{product.product_name}}</h1>
+    <p>{{product.product_description}}</p>
+    {{product.product_images}}
+    <img src="media/{{product.product_images}}" alt="image should be here">
+    <br>
+    {% endfor %}
   </body>
 </html>
