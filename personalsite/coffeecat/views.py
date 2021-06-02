@@ -6,12 +6,21 @@ from django.core.paginator import Paginator
 def coffee_home(request):
     products = Product.objects.all()
     context = {'products':products}
-    return render(request,'coffeecat/home.html',context)
+    return render(request,'coffeecat/coffeeindex.html',context)
 
 def coffee_menu(request):
     #products = Product.objects.all()
     #context = {'products':products}
     return render(request,'coffeecat/menu.html')#,context)
+
+def coffee_beans(request):
+    return render(request,'coffeecat/beans.html')
+
+def coffee_drinks(request):
+    return render(request,'coffeecat/drinks.html')
+
+def coffee_food(request):
+    return render(request,'coffeecat/food.html')
 
 '''def coffee_cart(request):
     cart_items = Cart.objects.all()
