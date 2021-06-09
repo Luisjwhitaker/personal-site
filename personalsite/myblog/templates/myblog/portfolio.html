@@ -1,7 +1,7 @@
 {% load static %}
 <!DOCTYPE HTML>
 <!--
-  This template was edited by me to use for my portfolio, it is:
+  This template was edited by me to use for my portfolio, but is originaly:
 	Stellar by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
@@ -14,6 +14,14 @@
 		<link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}" />
 		<noscript><link rel="stylesheet" href="{% static 'portfolio/css/noscript.css' %}" /></noscript>
 	</head>
+	<style>
+		body {
+		  background-image: url("{% static 'portfolio/images/wood-background.jpg' %}");
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100% 100%;
+		}
+	</style>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -22,11 +30,11 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<!-- <span class="logo"><img src="images/logo.svg" alt="" /></span> -->
+						<span class="logo"><img style="border-radius: 50%;" src="{% static 'blog/images/self.png' %}" alt="" width="250" height="250" /></span>
 						<h1>Luis John Whitaker</h1>
-						<p>Django Programmer<br>
-            <a href="{% url 'blog home' %}">Check out MyBlog</a><br>
-						<a href="{% url 'coffee home' %}">Check out CoffeCat</a></p>
+						<p><b>Software Developer</b><br>
+						<a href="#" class="button">Resume</a>
+						<a href="{% url 'blog home' %}" class="button">My Blog</a>
 					</header>
 
 				<!-- Nav -->
@@ -43,81 +51,82 @@
 					<div id="main">
 
 						<!-- Projects | first split -->
-						<!-- Project 1 -->
-							<section id="projects" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Blog Site</h2>
-										</header>
-										Description:
-										<p>a sentence or two explaining what the project is</p>
-                    Difficulties:
-										<p>this is a sentence about the difficulties i had building the site</p>
-                    Solutions:
-                    <p>this is a sentence or two about what my solutions where to the problems</p>
-                    Technologies Used:
-                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
-										<ul class="actions">
-											<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
-											<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
-											<li><a href="generic.html" class="button">Preview</a></li>
-										</ul>
-									</div>
-									<!-- image goes here -->
-									<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
-								</div>
-							</section>
-            <!-- Project 2 -->
-              <section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Personal Branding Site</h2>
-										</header>
-										Description:
-										<p>a sentence or two explaining what the project is</p>
-                    Difficulties:
-										<p>this is a sentence about the difficulties i had building the site</p>
-                    Solutions:
-                    <p>this is a sentence or two about what my solutions where to the problems</p>
-                    Technologies Used:
-                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
-										<ul class="actions">
-											<li><a href="{% url 'coffee home' %}" class="button">Visit Site</a></li>
-											<li><a href="generic.html" class="button">See Code</a></li>
-											<li><a href="generic.html" class="button">Preview</a></li>
-										</ul>
-									</div>
-									<!-- image goes here -->
-									<span class="image"><img src="{% static 'portfolio/images/Website-placeholder-square.jpg' %}"/></span>
-								</div>
-							</section>
-            <!-- Project 3 -->
-              <section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Store Page for Hardware</h2>
-										</header>
-										Description:
-										<p>a sentence or two explaining what the project is</p>
-                    Difficulties:
-										<p>this is a sentence about the difficulties i had building the site</p>
-                    Solutions:
-                    <p>this is a sentence or two about what my solutions where to the problems</p>
-                    Technologies Used:
-                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Visit Site</a></li>
-											<li><a href="generic.html" class="button">See Code</a></li>
-										</ul>
-									</div>
-									<!-- image goes here -->
-									<span class="image"><img src="{% static 'portfolio/images/Website-placeholder-square.jpg' %}"/></span>
-								</div>
-							</section>
+							<!-- Project 1 | Blog Site -->
+								<section id="projects" class="main">
+									<div class="spotlight">
+										<div class="content">
+											<header class="major">
+												<h2>Blog Site</h2>
+											</header>
+											Description:
+											<p>a sentence or two explaining what the project is</p>
+	                    Difficulties:
+											<p>this is a sentence about the difficulties i had building the site</p>
+	                    Solutions:
+	                    <p>this is a sentence or two about what my solutions where to the problems</p>
+	                    Technologies Used:
+	                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
+											<ul class="actions">
+												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
+												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+											</ul>
+										</div>
+										<!-- image goes here -->
 
+											<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+
+									</div>
+								</section>
+							<!-- Project 2 | -->
+								<section id="projects" class="main">
+									<div class="spotlight">
+										<div class="content">
+											<header class="major">
+												<h2>Stool-IO</h2>
+											</header>
+											Description:
+											<p>a sentence or two explaining what the project is</p>
+	                    Difficulties:
+											<p>this is a sentence about the difficulties i had building the site</p>
+	                    Solutions:
+	                    <p>this is a sentence or two about what my solutions where to the problems</p>
+	                    Technologies Used:
+	                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
+											<ul class="actions">
+												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
+												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+											</ul>
+										</div>
+										<!-- image goes here -->
+										<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+									</div>
+								</section>
+							<!-- Project 3 | Bowel Movement Tracker-->
+								<section id="projects" class="main">
+									<div class="spotlight">
+										<div class="content">
+											<header class="major">
+												<h2>Trakky Time</h2>
+											</header>
+											Description:
+											<p>a sentence or two explaining what the project is</p>
+	                    Difficulties:
+											<p>this is a sentence about the difficulties i had building the site</p>
+	                    Solutions:
+	                    <p>this is a sentence or two about what my solutions where to the problems</p>
+	                    Technologies Used:
+	                    <p><i class="icon brands fa-github"></i><i class="icon brands fa-html5"></i> this is a sentence or two about what technologies where used and maybe even pictures or icons for each?</p>
+											<ul class="actions">
+												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
+												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+											</ul>
+										</div>
+										<!-- image goes here -->
+
+											<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+
+									</div>
+								</section>
 
 						<!-- Skills | second split-->
 							<section id="skills" class="main special">
@@ -126,54 +135,45 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon brands major style1 fa-html5"></span>
-										<h3>HTML5</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon brands major style3 fa-css3"></span>
-										<h3>CSS</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
 										<span class="icon brands major style5 fa-python"></span>
 										<h3>Python</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-                  <li>
-										<span class="icon brands major style2 fa-github"></span>
-										<h3>Github</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-                  <li>
-										<span class="icon brands major style4 fa-font-awesome"></span>
-										<h3>Font Awesome</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-                  <li>
-										<span class="icon brands major style1 fa-sass"></span>
-										<h3>Sass</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<span class="icon brands major style3 fa-foursquare"></span>
-										<h3>Foursquare</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon brands major style2 fa-github"></span>
+										<h3>Github</h3>
+									</li>
+									<li>
+										<span class="icon brands major style2 fa-js-square "></span>
+										<h3>JavaScript</h3>
+									</li>
+									<li>
+										<span class="icon brands major style3 fa-linode"></span>
+										<h3>Linode</h3>
 									</li>
 									<li>
 										<span class="icon brands major style5 fa-react"></span>
 										<h3>React</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
 									</li>
 									<li>
-										<span class="icon brands major style2 fa-bootstrap "></span>
-										<h3>Bootstrap</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
+										<span class="icon brands major style1 fa-html5"></span>
+										<h3>HTML5</h3>
+									</li>
+									<li>
+										<span class="icon brands major style3 fa-css3"></span>
+										<h3>CSS</h3>
+									</li>
+                  <li>
+										<span class="icon brands major style4 fa-ubuntu"></span>
+										<h3>Ubuntu</h3>
+									</li>
+                  <li>
+										<span class="icon solid major style1 fa-feather-alt"></span>
+										<h3>Tkinter</h3>
 									</li>
 								</ul>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="https://github.com/luisjwhitaker" class="button">My GitHub</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -217,31 +217,32 @@
 
 					</div>
 
-
 				<!-- Footer -->
 					<footer id="footer">
+						<!-- Left Section -->
 						<section>
 							<h2>Luis John Whitaker</h2>
-							<p>	Python|Django Programming</p>
+							<p>Software Developer</p>
 							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
+								<li><a href="#" class="button">Resume</a></li>
+								<li><a href="mailto:luisjwhitaker@gmail.com" class="button">E-mail</a></li>
 							</ul>
 						</section>
+						<!-- Right Section -->
 						<section>
 							<h2>Contact Me:</h2>
 							<dl class="alt">
 								<dt>GitHub</dt>
-								<dd><a href="https://github.com/luisjwhitaker">github.com/luisjwhitaker</a></dd>
+								<dd><a href="https://github.com/luisjwhitaker">Github.com/luisjwhitaker</a></dd>
 								<dt>LinkedIn</dt>
-								<dd><a href="#">linkedin.com</a></dd>
-								<dt>My Blog</dt>
+								<dd><a href="#">Linkedin.com</a></dd>
+								<dt>MyBlog</dt>
 								<dd><a href="/blog">MyBlog</a></dd>
 							</dl>
 							<ul class="icons">
 								<li><a href="#" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
 					</footer>
