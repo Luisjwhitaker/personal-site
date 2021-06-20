@@ -33,8 +33,8 @@
 						<span class=""><img style="border-radius: 50%;" src="{% static 'blog/images/self.png' %}" alt="" width="250" height="250" /></span>
 						<h1>Luis John Whitaker</h1>
 						<p><b>Software Developer</b><br>
-						<a href="#" class="button">Resume</a>
-						<a href="{% url 'blog home' %}" class="button">My Blog</a>
+							<a href="https://github.com/luisjwhitaker" class="button">Github</a>
+							<a href="#footer" class="button">Contact Me</a>
 					</header>
 
 				<!-- Nav -->
@@ -58,66 +58,93 @@
 											<header class="major">
 												<h2>Blog Site</h2>
 											</header>
-											Description / Overview:
-											<p>A Blog site app on Django with SummerNote as its editor. Demonstrated Django’s model and view relationship and allows for dynamic pages with pagination.</p>
+											Overview:
+											<p>
+												A Blog site app on Django with SummerNote as its editor. This site demonstrates Django’s model and view relationship and allows for dynamic pages with pagination.
+											</p>
 	                    Goals and Implementation:
-	                    <p>This project challenged my skill in working with web frameworks, the goal for this project was to have an elegant looking website that allowed me to display my blog posts to readers. Being comfortable with python i decided to use django as my framework to allow me to add onto the site in the future, django is also a great choice due to its provided paginator class that allowed for webpage layout, and its ability to integrate a rich text editor, in this case summernote, directly into its models.</p>
+	                    <p>
+												The goal for my blog site project is to have an elegant looking website that allows me to display my blog posts to readers. Its also meant to serve as a learning guide for web frameworks. Being comfortable with python i decided to use django as my framework to allow me to add onto the site in the future, django is also a great choice due to its provided paginator class that allowed for webpage layout, and its ability to integrate a rich text editor, in this case summernote, directly into its models.
+											</p>
 	                    Future plans/improvements:
-	                    <p>- saving posts<br>- sharing on social media<br>- comments <br>- user accounts</p>
+	                    <p>
+												- user accounts and authentication
+												<br>- the option to save posts
+												<br>- the options for users to share posts on social media
+												<br>- the option for users to comment and rate posts
+											</p>
 											<ul class="actions">
 												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
-												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+												<li><a href="https://github.com/Luisjwhitaker/personal-site/" class="button">See Code</a></li>
 											</ul>
 										</div>
 										<!-- image goes here -->
 
-											<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+											<span class="image"><img src="{% static 'portfolio/images/monitor-placeholder.png' %}"/></span>
 
 									</div>
 								</section>
-							<!-- Project 2 | -->
+							<!-- Project 2 | Stool-IO -->
 								<section id="projects" class="main">
 									<div class="spotlight">
 										<div class="content">
 											<header class="major">
 												<h2>Stool-IO</h2>
 											</header>
-											Description / Overview:
-											<p>A Blog site app on Django with SummerNote as its editor. Demonstrated Django’s model and view relationship and allows for dynamic pages with pagination.</p>
+											Overview:
+											<p>
+												Stool-IO is a bowel movement/ stool logger that helps gastroenterology patients keep track of bowel movements and other events and share that information with their doctors via Google Sheets.
+											</p>
 											Goals and Implementation:
-											<p>This project challenged my skill in working with web frameworks, the goal for this project was to have an elegant looking website that allowed me to display my blog posts to readers. Being comfortable with python i decided to use django as my framework to allow me to add onto the site in the future, django is also a great choice due to its provided paginator class that allowed for webpage layout, and its ability to integrate a rich text editor, in this case summernote, directly into its models.</p>
-											Future plans/improvements:
-											<p>- saving posts<br>- sharing on social media<br>- comments <br>- user accounts</p>
+											<p>
+												The goal for Stool-IO is to build a proof-of-concept that is intuitive to use, the application needs to track the date and time, the kind of event that occurred, and any other additional information the user decides is important. To do this I decided on Tkinter to make the desktop GUI. I also need a way to save this information where it is easy to view, update, and share with the user’s doctor, this is why i decided to use the google sheets api.
+											</p>
+											Future plans and Improvements:
+											<p>
+												- use kivi to implement a mobile version
+												<br>- have to opton to view user data in-app as graphs or reports
+												<br>- native apps for ios and android for faster, smoother operation and added functionality such as notification support.
+											</p>
 											<ul class="actions">
-												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
-												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+												<li><a href="#" class="button">Demo Video</a></li>
+												<li><a href="https://github.com/Luisjwhitaker/stool-logging-app" class="button">See Code</a></li>
 											</ul>
 										</div>
 										<!-- image goes here -->
-										<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+										<span class="image"><img src="{% static 'portfolio/images/monitor-placeholder.png' %}"/></span>
 									</div>
 								</section>
-							<!-- Project 3 | Bowel Movement Tracker-->
+							<!-- Project 3 | Trakky Time -->
 								<section id="projects" class="main">
 									<div class="spotlight">
 										<div class="content">
 											<header class="major">
 												<h2>Trakky Time</h2>
 											</header>
-											Description / Overview:
-											<p>A Blog site app on Django with SummerNote as its editor. Demonstrated Django’s model and view relationship and allows for dynamic pages with pagination.</p>
+											Overview:
+											<p>
+												Trakky Time is an Activity and Time tracker for busy individuals who want to reclaim wasted time throughout the day.
+												<br>Time tracking allows its users to increase profitability with accurate time tracking of work tasks, manage projects better, and communicate progress to their team better.
+											</p>
 											Goals and Implementation:
-											<p>This project challenged my skill in working with web frameworks, the goal for this project was to have an elegant looking website that allowed me to display my blog posts to readers. Being comfortable with python i decided to use django as my framework to allow me to add onto the site in the future, django is also a great choice due to its provided paginator class that allowed for webpage layout, and its ability to integrate a rich text editor, in this case summernote, directly into its models.</p>
-											Future plans/improvements:
-											<p>- saving posts<br>- sharing on social media<br>- comments <br>- user accounts</p>
+											<p>
+												The goal for Trakky Time is to have an application that allows users to track the activities they do and the time it takes them to do it, this app needs a simple user interface and a way to save the activities. To accomplish this i used tkinter as the GUI and SQLite as the database as its built into python and works well with tkinter.
+											</p>
+											Future plans and Improvements:
+											<p>
+												- create a mobile version for ease of use.
+												<br>- give users the ability to view data in-app in the form of graphs.
+												<br>- allow users to create invoices from the app.
+												<br>- allow users to bill clients from the app.
+											</p>
 											<ul class="actions">
-												<li><a href="{% url 'blog home' %}" class="button">Visit Site</a></li>
-												<li><a href="https://github.com/Luisjwhitaker" class="button">See Code</a></li>
+												<li><a href="#" class="button">Demo Video</a></li>
+												<li><a href="https://github.com/Luisjwhitaker/time-tracker" class="button">See Code</a></li>
 											</ul>
 										</div>
 										<!-- image goes here -->
 
-											<span class="image"><img src="{% static 'portfolio/images/blog-placeholder.jpg' %}"/></span>
+											<span class="image"><img src="{% static 'portfolio/images/phone-placeholder.png' %}"/></span>
 
 									</div>
 								</section>
@@ -213,12 +240,12 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="footer" style="background-color:#0005;">
 						<!-- Left Section -->
 						<section>
-							<h2>Luis John Whitaker</h2>
-							<p>Im a self-taught developer based in california.</p>
-							<p>All my life I loved building things and sharing them with others, and nothing is more distributable or can impact the world more than code.</p>
+							<h2><b>Luis John Whitaker</b></h2>
+							<p>Im a self-taught developer based in california.
+							<br><br>All my life I loved building things and sharing them with others, and nothing is more distributable or can impact the world more than code.</p>
 							<!--ul class="actions">
 								<li><a href="#" class="button">Resume</a></li>
 								<li><a href="mailto:luisjwhitaker@gmail.com" class="button">E-mail</a></li-->
@@ -250,7 +277,7 @@
 							</form>
 							<ul class="icons">
 								<li><a href="#" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<!--li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li-->
 								<li><a href="https://github.com/luisjwhitaker" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
@@ -267,6 +294,5 @@
 			<script src="{% static 'portfolio/js/breakpoints.min.js' %}"></script>
 			<script src="{% static 'portfolio/js/util.js' %}"></script>
 			<script src="{% static 'portfolio/js/main.js' %}"></script>
-
 	</body>
 </html>
