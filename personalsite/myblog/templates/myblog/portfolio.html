@@ -36,7 +36,7 @@
 							<a href="https://github.com/luisjwhitaker" class="button">Github</a>
 							<a href="#footer" class="button">Contact Me</a>
 					</header>
-
+					<center><h2>thanks {{contact_name}}</h2>
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
@@ -293,11 +293,12 @@
 						<!-- Right Section -->
 						<section>
 							<h2>Contact Me:</h2>
-							<form method="post" action="#">
+							<form method="POST" action="{% url 'portfolio home' %}">
+								{% csrf_token %}
 								<div class="row gtr-uniform">
-									<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-									<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									<div class="col-6 col-12-xsmall"><input type="text" name="contact-name" id="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-xsmall"><input type="email" name="contact-email" id="email" placeholder="Email" /></div>
+									<div class="col-12"><textarea name="contact-message" id="message" placeholder="Message" rows="4"></textarea></div>
 									<div class="col-12">
 										<ul class="actions special">
 											<li><input type="submit" value="Send Message" class="primary" /></li>

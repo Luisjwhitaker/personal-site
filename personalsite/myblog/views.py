@@ -1,7 +1,8 @@
-from django.shortcuts import render
 from .models import *
+from django.shortcuts import render
 from django.core.paginator import Paginator
-# Create your views here.
+from django.core.mail import send_mail
+from django.conf import settings
 
 def blog_home(request):
     items = BlogPost.objects.all()
@@ -18,4 +19,18 @@ def post_page(request,primery_key):
     return render(request,'myblog/postpage.html',{'post':post})
 
 def portfolio_home(request):
-    return render(request,'myblog/portfolio.html')
+    if request.method == 'POST':
+        contact_name = request.POST['contact-name']
+        contact_email = request.POST['contact-email']
+        contact_message = request.POST['contact-message']
+
+        send_mail(
+            contact_name,         # Email Subject
+            contact_message + " by: " +contact_email,      # Email Message/Body
+            contact_email,        # Email 'From:'
+            ['example@mail.com'] # Email 'to:'
+        )
+        return render(request, 'myblog/portfolio.html',{'contact_name':contact_name})
+
+    else:
+        return render(request, 'myblog/portfolio.html',{})
