@@ -13,10 +13,11 @@
 		<!--meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /-->
 		<link rel="stylesheet" href="{% static 'portfolio/css/main.css' %}" />
 		<noscript><link rel="stylesheet" href="{% static 'portfolio/css/noscript.css' %}" /></noscript>
+		<link rel="icon" type="image/x-icon" href="{% static 'portfolio/images/favicon.ico' %}">
 	</head>
 	<style>
 		body {
-		  background-image: url("{% static 'portfolio/images/wood-background.jpg' %}");
+		  background-image: url("{% static 'portfolio/images/motherboard-background-60.png' %}");
 		  background-repeat: no-repeat;
 		  background-attachment: fixed;
 		  background-size: 100% 100%;
@@ -79,7 +80,7 @@
 										</div>
 										<!-- image goes here -->
 
-											<span class="image"><img src="{% static 'portfolio/images/monitor-placeholder.png' %}"/></span>
+											<span class="image"><img src="{% static 'portfolio/images/Blog-site.png' %}"/></span>
 
 									</div>
 								</section>
@@ -110,7 +111,7 @@
 											</ul>
 										</div>
 										<!-- image goes here -->
-										<span class="image"><img src="{% static 'portfolio/images/monitor-placeholder.png' %}"/></span>
+										<span class="image"><img src="{% static 'portfolio/images/Stool-IO.png' %}"/></span>
 									</div>
 								</section>
 							<!-- Project 3 | Trakky Time -->
@@ -137,13 +138,13 @@
 												<br>- allow users to bill clients from the app.
 											</p>
 											<ul class="actions">
-												<li><a href="https://www.youtube.com/" class="button">Demo Video</a></li>
+												<li><a href="https://www.youtube.com/watch?v=AvAIImGlk3I&ab_channel=luisjohnwhitaker" class="button">Demo Video</a></li>
 												<li><a href="https://github.com/Luisjwhitaker/time-tracker" class="button">See Code</a></li>
 											</ul>
 										</div>
 										<!-- image goes here -->
 
-											<span class="image"><img src="{% static 'portfolio/images/phone-placeholder.png' %}"/></span>
+											<span class="image"><img src="{% static 'portfolio/images/Trakky-Time.png' %}"/></span>
 
 									</div>
 								</section>
@@ -168,17 +169,13 @@
 												<br>- Guides page
 											</p>
 											<ul class="actions">
-												<li><a href="{% url 'blog home' %}" class="button">Demo Video</a></li>
-<<<<<<< HEAD
+												<li><a href="https://www.youtube.com/watch?v=FOn8P-xSXiE&ab_channel=luisjohnwhitaker" class="button">Demo Video</a></li>
 												<li><a href="https://github.com/Luisjwhitaker/DLSApp" class="button">See Code</a></li>
-=======
-												<li><a href="https://github.com/Luisjwhitaker/personal-site/" class="button">See Code</a></li>
->>>>>>> 5abd05718afc244b4a6b1635c899f6b0616d4fb4
 											</ul>
 										</div>
 										<!-- image goes here -->
 
-											<span class="image"><img src="{% static 'portfolio/images/monitor-placeholder.png' %}"/></span>
+											<span class="image"><img src="{% static 'portfolio/images/DLSApp.png' %}"/></span>
 
 									</div>
 								</section>
@@ -275,7 +272,7 @@
 				<!-- Footer -->
 					<footer id="footer" style="background-color:#0005;">
 						<!-- Left Section -->
-						<section>
+						<!--section-->
 							<h2><b>Luis John Whitaker</b></h2>
 							<p>Im a developer based in San Francisco,CA .
 							<br><br>All my life I've loved building things and sharing them with others, and nothing is more distributable or can impact the world more than code.</p>
@@ -292,9 +289,9 @@
 								<dd><a href="{% url 'blog home' %}">MyBlog</a></dd>
 							</dl>
 
-						</section>
+						<!--/section-->
 						<!-- Right Section -->
-						<section>
+						<!--<section>
 							<h2>Contact Me:</h2>
 							<form method="POST" action="{% url 'portfolio home' %}">
 								{% csrf_token %}
@@ -311,10 +308,10 @@
 							</form>
 							<ul class="icons">
 								<li><a href="https://www.linkedin.com/in/luis-john-whitaker-b11a86158/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<!--li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li-->
-								<li><a href="https://github.com/luisjwhitaker" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								-->	<!--li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li-->
+								<!--	<li><a href="https://github.com/luisjwhitaker" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							</ul>
-						</section>
+						</section> -->
 
 					</footer>
 
